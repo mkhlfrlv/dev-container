@@ -1,4 +1,4 @@
-# dev-container
+# dev-k8s-container
 Pure Ubuntu image with SSHD for remote development via JetBrains Gateway
 
 ## Login Credentials
