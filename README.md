@@ -1,7 +1,10 @@
 # dev-container
 Pure Ubuntu image with SSHD for remote development via JetBrains Gateway
 
-Login: dev
-Pass: dev
+## Login Credentials
 
-Project dir: /home/dev/app
+- **Username:** `dev`  
+- **Password:** `dev`
+
+## Project Directory
+/home/dev/app
