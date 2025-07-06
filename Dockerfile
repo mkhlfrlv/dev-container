@@ -16,7 +16,10 @@ RUN ssh-keygen -A
 
 RUN mkdir -p /run/sshd
 
+COPY start.sh /start.sh
+RUN chmod +x /start.sh
+RUN echo '[ -f /etc/k8s-env ] && export $(cat /etc/k8s-env | xargs)' > /home/dev/.bashrc
 
 EXPOSE 22
 
-CMD ["/usr/sbin/sshd", "-D"]
+CMD ["/start.sh"]

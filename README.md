@@ -11,7 +11,7 @@ Pure Ubuntu image with SSHD for remote development via JetBrains Gateway
 
 ## Image
 
-- [Docker Hub: mkhlfrlv/ubuntu-sshd-dev](https://hub.docker.com/r/mkhlfrlv/ubuntu-sshd-dev)
+- [Docker Hub: mkhlfrlv/ubuntu-sshd-dev](https://hub.docker.com/r/mkhlfrlv/dev-k8s-container)
 
 ```bash
-docker pull mkhlfrlv/ubuntu-sshd-dev:1.0
+docker pull mkhlfrlv/dev-k8s-container:1.0

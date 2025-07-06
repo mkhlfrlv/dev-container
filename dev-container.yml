@@ -8,7 +8,7 @@ spec:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 5Gi
+      storage: 1Gi
 ---
 apiVersion: v1
 kind: Pod
@@ -19,9 +19,9 @@ metadata:
 spec:
   containers:
     - name: pycharm-dev
-      image: mkhlfrlv/ubuntu-sshd-dev:1.0
+      image: mkhlfrlv/dev-k8s-container:1.0
       imagePullPolicy: Always
-      command: ["/usr/sbin/sshd", "-D"]
+      command: ["/start.sh"]
       resources:
         requests: 
           memory: "6144Mi"
